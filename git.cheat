@@ -1,0 +1,23 @@
+% axl, git
+
+# Create a git commit including a message
+git commit -m "<message>"
+
+# Undo previous Git commit (keep files)
+git reset HEAD~
+
+# Push local branch to origin after running a rebase from main
+git push origin <branch> --force-with-lease
+
+# Add files to previous Git commit
+git commit --amend --no-edit
+
+# Create a Git stash including a message
+git stash push -m "<message>"
+;$ message: echo '[]'
+
+# Apply a Git stash
+git stash pop <stash>
+;$ stash: echo 'stash@{0}'
+;$ stash: git stash list | awk -F: '{print $1}'
+$ stash: git stash list --format='%gd: %gs'

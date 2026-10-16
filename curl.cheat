@@ -1,0 +1,4 @@
+% axl, curl, download
+
+# Download a file via curl
+curl -fL -o <filename> <url>
