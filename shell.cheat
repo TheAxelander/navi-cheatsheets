@@ -1,0 +1,62 @@
+
+% axl, shell
+
+# Get the current path
+pwd
+
+# Get the current hostname
+hostname
+
+# Get the current users
+users
+
+# Show calendar
+cal
+
+# Show today's date
+date
+
+# Create symlink
+ln -s <source-dirname> <destination-dirname>
+
+# Update symlink
+ln -sfn <source-dirname> <destination-dirname>
+
+# Remove symlink
+unlink <sample-dirname>
+
+# Search for a string inside all files in the current directory and subdrectories
+grep -r <string> *
+
+# Search and replace within file
+sed -i s/<original-text>/<new-text>/g <filename-txt>
+
+# Copy file from server to local
+scp <username-remote>:<file-to-send-path> <path-to-recieve> 
+
+# Copy file from local to server
+scp <file-to-send> <username-remote>:<where-to-put>
+
+# Show disk space
+df -h
+
+# Show disk space (inodes)
+df -i
+
+# Show disk space for current directory
+du -hs
+
+# Show disk space (via duf)
+duf
+
+# Show disk space getting every possible device
+duf --all
+
+# Show disk space but disregard special devices
+duf -hide-special
+
+# Write to file
+echo <Hello> > <hello-txt>
+
+# Append content from a file to another file
+cat <file1-txt> >> <file2-txt>
