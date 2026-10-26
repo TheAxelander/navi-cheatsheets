@@ -4,6 +4,6 @@
 ./enricher_util.py --name <enricher> --show-global > <file>
 $ file: echo '~/Downloads/test.sql'
 
-# Create SQL based on the named Persister
-./persister_util.py --name <persister> --show-global > <file>
+# Display Table DDL of the named Persister
+./persister_util.py --name <persister> --show-table-ddl > <file>
 $ file: echo '~/Downloads/test.sql'
